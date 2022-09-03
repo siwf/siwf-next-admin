@@ -2,7 +2,7 @@
  * @Description:
  * @Date: 2022-09-03 15:38:11
  * @LastEditors: siwenfeng
- * @LastEditTime: 2022-09-03 16:21:03
+ * @LastEditTime: 2022-09-03 17:18:39
  */
 module.exports = {
   env: {
@@ -16,11 +16,13 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended'
   ],
-  overrides: [],
   parser: 'vue-eslint-parser',
   parserOptions: {
-    ecmaVersion: 'latest',
+    ecmaFeatures: {
+      jsx: true
+    },
     parser: '@typescript-eslint/parser',
+    ecmaVersion: 'latest',
     sourceType: 'module'
   },
   plugins: ['vue', '@typescript-eslint', 'prettier'],
