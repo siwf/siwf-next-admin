@@ -1,4 +1,10 @@
+###
+ # @Description: 
+ # @Date: 2022-09-03 15:51:33
+ # @LastEditors: siwenfeng
+ # @LastEditTime: 2022-09-03 15:55:45
+### 
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-npm run lint
+npx lint-staged
