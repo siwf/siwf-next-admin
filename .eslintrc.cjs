@@ -2,7 +2,7 @@
  * @Description:
  * @Date: 2022-09-03 15:38:11
  * @LastEditors: siwenfeng
- * @LastEditTime: 2022-09-03 17:18:39
+ * @LastEditTime: 2022-09-03 21:00:19
  */
 module.exports = {
   env: {
@@ -30,6 +30,8 @@ module.exports = {
     'prettier/prettier': 'error',
     'arrow-body-style': 'off',
     'prefer-arrow-callback': 'off',
-    '@typescript-eslint/ban-types': 'off'
+    '@typescript-eslint/ban-types': 'off',
+    'vue/multi-word-component-names': 'off',
+    '@typescript-eslint/no-empty-function': 'off'
   }
 }
