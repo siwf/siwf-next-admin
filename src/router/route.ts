@@ -2,7 +2,7 @@
  * @Description:
  * @Date: 2022-09-03 17:44:24
  * @LastEditors: siwenfeng
- * @LastEditTime: 2022-09-03 21:09:40
+ * @LastEditTime: 2022-09-03 22:52:49
  */
 import { RouteRecordRaw } from 'vue-router'
 
@@ -69,6 +69,31 @@ export const staticRoutes: Array<RouteRecordRaw> = [
     component: () => import('@/views/login/index.vue'),
     meta: {
       title: '登录'
+    }
+  }
+]
+
+/**
+ * 定义404、401界面
+ * @link 参考：https://next.router.vuejs.org/zh/guide/essentials/history-mode.html#netlify
+ */
+export const notFoundAndNoPower = [
+  {
+    path: '/:path(.*)*',
+    name: 'notFound',
+    component: () => import('@/views/error/404.vue'),
+    meta: {
+      title: 'message.staticRoutes.notFound',
+      isHide: true
+    }
+  },
+  {
+    path: '/401',
+    name: 'noPower',
+    component: () => import('@/views/error/401.vue'),
+    meta: {
+      title: 'message.staticRoutes.noPower',
+      isHide: true
     }
   }
 ]

@@ -2,7 +2,7 @@
  * @Description:
  * @Date: 2022-09-03 19:47:53
  * @LastEditors: siwenfeng
- * @LastEditTime: 2022-09-03 22:11:39
+ * @LastEditTime: 2022-09-03 22:54:12
  */
 export interface UserInfosState {
   authBtnList: string[]
@@ -24,4 +24,9 @@ export interface RoutesListState {
 // 后端返回原始路由(未处理时)
 export interface RequestOldRoutesState {
   requestOldRoutes: string[]
+}
+// 路由缓存列表
+export interface KeepAliveNamesState {
+  keepAliveNames: string[]
+  cachedViews: string[]
 }
