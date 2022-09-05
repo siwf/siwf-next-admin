@@ -2,7 +2,7 @@
  * @Description:
  * @Date: 2022-09-03 15:34:43
  * @LastEditors: siwenfeng
- * @LastEditTime: 2022-09-03 19:58:48
+ * @LastEditTime: 2022-09-04 19:17:44
  */
 import vue from '@vitejs/plugin-vue'
 import viteEslint from 'vite-plugin-eslint'
@@ -45,7 +45,7 @@ export default defineConfig((mode: ConfigEnv) => {
       open: env.VITE_OPEN,
       proxy: {
         '/gitee': {
-          target: 'https://gitee.com',
+          target: 'https://lyt-top.gitee.io/',
           ws: true,
           changeOrigin: true,
           rewrite: (path) => path.replace(/^\/gitee/, '')

@@ -2,7 +2,7 @@
  * @Description:
  * @Date: 2022-09-03 17:40:02
  * @LastEditors: siwenfeng
- * @LastEditTime: 2022-09-04 14:11:53
+ * @LastEditTime: 2022-09-04 19:07:36
  */
 import { createRouter, createWebHashHistory } from 'vue-router'
 import { staticRoutes } from '@/router/route'
@@ -26,8 +26,6 @@ export const router = createRouter({
 // 路由加载前
 router.beforeEach(async (to, from, next) => {
   // eslint-disable-next-line no-debugger
-  // debugger
-  Session.set('token', 'siwenfeng')
   NProgress.configure({ showSpinner: false })
   if (to.meta.title) NProgress.start()
   const token = Session.get('token')
